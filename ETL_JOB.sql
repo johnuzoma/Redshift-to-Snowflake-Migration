@@ -24,7 +24,7 @@ def main(session: snowpark.Session):
                 f"""
                 CREATE OR REPLACE STAGE practice.event_mgmt.stg_{table_name}
                     STORAGE_INTEGRATION = s3_data_integration
-                    URL = ''s3://bucket-name/{table_name}/''
+                    URL = ''s3://[BUCKETNAME]/{table_name}/''
                     FILE_FORMAT = (TYPE=PARQUET);
                 """
             ).collect()
