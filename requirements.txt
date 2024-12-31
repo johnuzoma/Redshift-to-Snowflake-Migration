@@ -1,1 +1,1 @@
-apache-airflow-providers-snowflake==5.8.1
+apache-airflow-providers-snowflake==5.8.0

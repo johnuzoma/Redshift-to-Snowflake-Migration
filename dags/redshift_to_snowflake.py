@@ -34,7 +34,7 @@ unload_to_s3 = RedshiftSQLOperator(
 # Task 2: Extract from S3, transform, and load to Snowflake
 snowflake_etl = SnowflakeOperator(
     task_id='snowflake_etl',
-    sql='CALL PRACTICE.EVENT_MGMT."ETL job"();',
+    sql='CALL PRACTICE.EVENT_MGMT.ETL_JOB();',
     snowflake_conn_id='snowflake_conn',
     dag=dag
 )
