@@ -30,7 +30,7 @@ def main(session: snowpark.Session):
             ).collect()
         except Exception as e:
             print(f"Error creating/replacing stage for {table_name}: {e}")
-            break
+            continue
 
         # validate the existence of parquet file(s)
         if has_parquet_file(session, stage_path):         
