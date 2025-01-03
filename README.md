@@ -1,5 +1,11 @@
 # Redshift-to-Snowflake-Migration
 
+### Overview
+I implemented a fault-tolerant pipeline to migrate data from Amazon Redshift to Snowflake.
+The data includes 7 tables (category, date, event, listing, sales, users, and venue), which model a ticketing or event management system.
+
+Tools used include: Amazon S3, SQL, Python, Apache Airflow, AWS IAM, Amazon Redshift, Snowflake.
+
 ### Solution Architecture
 ![redshift-to-snowflake-migration](https://github.com/user-attachments/assets/b6dcf64d-c14b-4a57-8dd5-872f86209ebf)
 
